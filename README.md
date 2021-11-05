@@ -1,6 +1,9 @@
 # currency_converter_flutter
 
-Contribute by: Amirul Luqman bin Abdul Hisham
+Contribute By: Amirul Luqman bin Abdul Hisham
+
+Matric Number: 273678
+
 Build version: 0.0.1
 
 A currency converter apps that can convert different types
