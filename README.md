@@ -4,7 +4,9 @@ Contribute By: Amirul Luqman bin Abdul Hisham
 
 Matric Number: 273678
 
-Build version: 0.0.1
+Application Name: Currency Converter
+
+Build version: 1.0.0
 
 A currency converter apps that can convert different types
 of currencies in real time.
