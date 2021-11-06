@@ -37,6 +37,7 @@ class _HomeState extends State<Home> {
     "USD",
     "THB",
   ];
+  // In the list of currencies only 5 different types.
 
   double result = 0.0;
 
@@ -202,6 +203,7 @@ class _HomeState extends State<Home> {
 
       setState(() {
         result = rate * double.parse(textController.text);
+        // Parsing the string into double to calculate the rate
       });
     } else {
       print("Failed to connect API.");
