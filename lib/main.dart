@@ -23,6 +23,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  late double screenHeight, screenWidth, resWidth;
+
   // Create Controller
   final textController = TextEditingController();
 
@@ -43,6 +45,15 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    screenHeight = MediaQuery.of(context).size.height;
+    screenWidth = MediaQuery.of(context).size.width;
+
+    if (screenWidth <= 600) {
+      resWidth = screenWidth;
+    } else {
+      resWidth = screenWidth * 0.75;
+    }
+
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue.shade900,
@@ -91,8 +102,8 @@ class _HomeState extends State<Home> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   Container(
-                    height: 60,
-                    width: 130,
+                    height: screenHeight / 10,
+                    width: resWidth / 4,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Colors.grey.shade400,
@@ -125,8 +136,8 @@ class _HomeState extends State<Home> {
                   ),
                   SizedBox(width: 32),
                   Container(
-                    height: 60,
-                    width: 130,
+                    height: screenHeight / 10,
+                    width: resWidth / 4,
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
                       color: Colors.grey.shade400,
