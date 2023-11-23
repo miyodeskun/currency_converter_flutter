@@ -200,7 +200,7 @@ class _HomeState extends State<Home> {
   }
 
   void _loadCurrencies() async {
-    var apiKey = 'a4c8cb33cbd43fd29592';
+    var apiKey = 'INSERT YOUR API KEY HERE';
     var url = Uri.parse(
         'https://free.currconv.com/api/v7/convert?q=$selectCur1$convert$selectCur2&apiKey=$apiKey');
     var response = await http.get(url);
